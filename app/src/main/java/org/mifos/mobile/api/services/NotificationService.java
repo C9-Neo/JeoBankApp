@@ -1,0 +1,26 @@
+package org.mifos.mobile.api.services;
+
+import org.mifos.mobile.api.ApiEndPoints;
+import org.mifos.mobile.models.notification.NotificationRegisterPayload;
+import org.mifos.mobile.models.notification.NotificationUserDetail;
+
+import io.reactivex.Observable;
+import okhttp3.ResponseBody;
+import retrofit2.http.Body;
+import retrofit2.http.GET;
+import retrofit2.http.POST;
+import retrofit2.http.PUT;
+import retrofit2.http.Path;
+
+public interface NotificationService {
+
+    @GET(ApiEndPoints.DEVICE + "/registration/client/{clientId}")
+    Observable<NotificationUserDetail> getUserNotificationId(@Path("clientId")long clientId);
+
+    @POST(ApiEndPoints.DEVICE + "/registration")
+    Observable<ResponseBody> registerNotification(@Body NotificationRegisterPayload payload);
+
+    @PUT(ApiEndPoints.DEVICE + "/registration/{id}")
+    Observable<ResponseBody> updateRegisterNotification(@Path("id")long id,
+                                                  @Body NotificationRegisterPayload payload);
+}
