@@ -90,6 +90,12 @@ dependencies {
     implementation "androidx.vectordrawable:vectordrawable:$rootProject.supportLibraryVersion"
     implementation "com.google.android.gms:play-services-oss-licenses:$rootProject.oss_licenses"
     implementation "com.isseiaoki:simplecropview:$rootProject.cropviewVersion"
+    //Dialog dependency
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.github.kittinunf.fuel:fuel-android:1.12.1'
+    implementation 'com.github.bassaer:chatmessageview:1.10.0'
+
+
 
     //kotlin dependency
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"

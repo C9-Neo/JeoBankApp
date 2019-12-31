@@ -148,6 +148,7 @@
         </service>
 
         <activity android:name="org.mifos.mobile.ui.activities.SettingsActivity"/>
+        <activity android:name=".ui.activities.SpeachActivity" />
     </application>
 
 </manifest>

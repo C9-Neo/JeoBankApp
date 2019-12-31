@@ -22,6 +22,7 @@ import org.mifos.mobile.presenters.HomePresenter;
 import org.mifos.mobile.ui.activities.AccountOverviewActivity;
 import org.mifos.mobile.ui.activities.HomeActivity;
 import org.mifos.mobile.ui.activities.LoanApplicationActivity;
+import org.mifos.mobile.ui.activities.SpeachActivity;
 import org.mifos.mobile.ui.activities.UserProfileActivity;
 import org.mifos.mobile.ui.activities.base.BaseActivity;
 import org.mifos.mobile.ui.enums.AccountType;
